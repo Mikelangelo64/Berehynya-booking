@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на прием</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <a href="#" class="custom-logo-link">
+                    <img src="./assets/img/logo.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <nav class="menu">
+                <div class="menu__toggle">
+                    <span></span>
+                </div>
+                <div class="menu__box">
+                    <div class="header__logo__mob">
+                        <a href="#" class="custom-logo-link">
+                            <img src="./assets/img/logo.png" alt="logo" class="logo">
+                        </a>
+                    </div>
+
+                    <ul class="menu__list">
+                        <li>
+                            <a href="#" data-goto=".main" class="menu__item menu__link">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#" data-goto=".services" class="menu__item menu__link">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#" data-goto=".prices" class="menu__item menu__link">Цены</a>
+                        </li>
+                        <li>
+                            <a href="#" data-goto=".contacts" class="menu__item menu__link">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <button class="header__btn _btn">Записаться на прием</button>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="post-header">
+        <div class="post-header__bg _background__gradient"></div>
+    </section>
+
+    <section class="booking">
+        <div class="_container">
+            <div class="booking__wrapper">
+                <div class="booking__text__block">
+                    <h1 class="title booking__title">
+                        Запись на прием онлайн
+                    </h1>
+                    <div class="booking__subtitle">
+                        <p>График работы клиники :</p>
+                        <p>
+                            <span> Понедельник  С 8:00 до 17:00, Суббота С 8-00 до 15-00,</span>
+                        </p>
+                        <p>
+                            <span> Воскресенье - выходной</span>
+                        </p>
+                    </div>
+                    <p>
+                        Просьба при заполнении формы и выборе даты и времени учитывать график работы
+                    </p>
+
+                </div>
+                <form class="booking-form">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="tel" name="phone" placeholder="Номер телефона">
+
+                    <p>Выберите услугу</p>
+                    <strong>
+                        <select name="choose-service" >
+                            <option value="">Запись на прием</option>
+                            <option value="Гинеколог">Гинеколог</option>
+                            <option value="Стоматолог">Стоматолог</option>
+                            <option value="Дерматовенеролог">Дерматовенеролог</option>
+                            <option value="Терапевт">Терапевт</option>
+                            <option value="Кардиолог">Кардиолог</option>
+                            <option value="Педиатр">Педиатр</option>
+                            <option value="Офтальмолог">Офтальмолог</option>
+                            <option value="Невролог">Невролог</option>
+                            <option value="Ультразвуковая диагностика">Ультразвуковая диагностика</option>
+                            <option value="Сдача анализов">Сдача анализов</option>
+                        </select>
+                    </strong>
+                    
+
+                    <div>
+                        <p>Желаемая дата посещения</p>
+                        <input type="text" name="date">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69.5 76.2">
+                            <path d="M9.6 42.9H21V31.6H9.6v11.3zm3-8.3H18v5.3h-5.3v-5.3zm16.5 8.3h11.3V31.6H29.1v11.3zm3-8.3h5.3v5.3h-5.3v-5.3zM48 42.9h11.3V31.6H48v11.3zm3-8.3h5.3v5.3H51v-5.3zM9.6 62H21V50.6H9.6V62zm3-8.4H18V59h-5.3v-5.4zM29.1 62h11.3V50.6H29.1V62zm3-8.4h5.3V59h-5.3v-5.4zM48 62h11.3V50.6H48V62zm3-8.4h5.3V59H51v-5.4z"></path>
+                            <path d="M59.7 6.8V5.3c0-2.9-2.4-5.3-5.3-5.3s-5.3 2.4-5.3 5.3v1.5H40V5.3C40 2.4 37.6 0 34.7 0s-5.3 2.4-5.3 5.3v1.5h-9.1V5.3C20.3 2.4 18 0 15 0c-2.9 0-5.3 2.4-5.3 5.3v1.5H0v69.5h69.5V6.8h-9.8zm-7.6-1.5c0-1.3 1-2.3 2.3-2.3s2.3 1 2.3 2.3v7.1c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3V5.3zm-19.7 0c0-1.3 1-2.3 2.3-2.3S37 4 37 5.3v7.1c0 1.3-1 2.3-2.3 2.3s-2.3-1-2.3-2.3V5.3zm-19.6 0C12.8 4 13.8 3 15 3c1.3 0 2.3 1 2.3 2.3v7.1c0 1.3-1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3V5.3zm53.7 67.9H3V9.8h6.8v2.6c0 2.9 2.4 5.3 5.3 5.3s5.3-2.4 5.3-5.3V9.8h9.1v2.6c0 2.9 2.4 5.3 5.3 5.3s5.3-2.4 5.3-5.3V9.8h9.1v2.6c0 2.9 2.4 5.3 5.3 5.3s5.3-2.4 5.3-5.3V9.8h6.8l-.1 63.4z"></path>
+                        </svg>
+
+                        <p>Желаемое время приема</p>
+                        <input type="time" name="time">
+                    </div>
+
+                    <button type="submit">Записаться на прием</button>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="adress">
+        <div class="_container">
+            <div class="adress__wrapper">
+                <div class="adress__info__block">
+                    <h3 class="adress__title title">
+                        г. Макаров (Киевская обл.) ул. Шляхетская 3/1
+                    </h3>
+                    <div class="adress__detail">
+                        <p>Телефон:</p>
+                        <a class="adress__link__mob" href="tel:+0967007300">096 700 73 00</a>
+                        <a class="adress__link__tel" href="tel:+0457860655">04578 606-55</a>
+                    </div>
+                    <div class="adress__detail">
+                        <p>Email:</p>
+                        <a class="adress__link__email" href="mailto:bereginya_m@ukr.net">bereginya_m@ukr.net</a>
+                    </div>
+                </div>
+                <div class="adress__google__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1269.9672583613176!2d29.81493622438764!3d50.46094407496434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb7b9d241c07%3A0x678088a80412720e!2z0JHQtdGA0LXQs9C40L3RjyDQnCAo0JzQsNC60LDRgNC-0LIpIC0g0KfQsNGB0YLQvdCw0Y8g0LrQu9C40L3QuNC60LA!5e0!3m2!1sru!2sua!4v1652367420711!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="_container footer__container">
+            <div class="footer__wrapper">
+                <p class="copyrights">
+                    © Все права защищены. Продвижение сайта Веб-студия 
+                    <a href="https://impulse-design.com.ua/">Impulse Design</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
